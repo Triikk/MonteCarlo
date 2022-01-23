@@ -46,7 +46,7 @@ double montecarlo(long int points) {
 		points--;
 	}
 
-	return ((double)count_in / (double)(count_out + count_in)) * 4;
+	return (double)count_in / (double)(count_out + count_in) * 4;
 }
 
 int main()
@@ -55,8 +55,8 @@ int main()
 	std::cout << "Insert the number of points you want to generate:" << std::endl;
 	std::cin >> points;
 
-	glfwSetErrorCallback(error_callback);
 	glfwInit();
+	glfwSetErrorCallback(error_callback);
 
 	std::ostringstream stream;
 	stream << "Monte Carlo method with " << points << " points";
