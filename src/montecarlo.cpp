@@ -9,8 +9,6 @@ void error_callback(int error, const char* description) {
 }
 
 void draw(double x, double y, bool color) {
-	glClear(GL_COLOR_BUFFER_BIT);
-
 	if (color) {
 		glColor3f(1.0f, 1.0f, 1.0f); // white
 	}
