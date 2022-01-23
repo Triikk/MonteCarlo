@@ -8,8 +8,8 @@ void error_callback(int error, const char* description) {
 	fprintf(stderr, "Error: %s\n", description);
 }
 
-void draw(double x, double y, bool color) {
-	if (color) {
+void draw(double x, double y, bool in) {
+	if (in) {
 		glColor3f(1.0f, 1.0f, 1.0f); // white
 	}
 	else {
